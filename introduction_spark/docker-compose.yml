@@ -1,0 +1,11 @@
+version: '3'
+services:
+  # spark:
+  #   build: ./spark
+  #   container_name: spark
+  fluentd:
+    build: ./fluentd
+    container_name: fluentd
+    ports: 
+      - 8888:9999
+      - 24230:24230
